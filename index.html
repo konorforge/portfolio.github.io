@@ -41,20 +41,25 @@
 
   <main class="container">
 
-    <!-- SECCIÓN: MIS PROYECTOS DESTACADOS -->
+<!-- SECCIÓN: MIS PROYECTOS DESTACADOS -->
     <section id="proyectos" class="section">
       <h2 class="section-main-title">MIS PROYECTOS DESTACADOS</h2>
       
-      <!-- SUBSECCIÓN 1: VIDEOS HORIZONTALES (2 arriba, lado a lado) -->
+      <!-- SUBSECCIÓN 1: VIDEOS (hor-1 ahora es vertical por ser Short) -->
       <div class="subsection">
-        <h3 class="section-subtitle">VIDEOS HORIZONTALES</h3>
+        <h3 class="section-subtitle">VIDEOS</h3>
         <div class="grid-2-cols">
           
+          <!-- CAMBIO DE HOR-1 A IFRAME VERTICAL -->
           <div class="card-video">
-            <div class="video-wrapper ratio-16-9">
-              <video controls preload="metadata">
-                <source src="videos/hor-1.mp4" type="video/mp4">
-              </video>
+            <div class="video-wrapper ratio-9-16">
+              <iframe 
+                src="https://www.youtube-nocookie.com/embed/9v8z5KBqxDg" 
+                title="Short 1" 
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
             </div>
             <div class="card-info">
               <h4>Edit de basketball</h4>
@@ -75,16 +80,20 @@
         </div>
       </div>
 
-      <!-- SUBSECCIÓN 2: LÍNEA DE TIEMPO (1 Vertical Izq, 1 Horiz + Precio Der) -->
+      <!-- SUBSECCIÓN 2: LÍNEA DE TIEMPO (timeline-vert cambiado a Short) -->
       <div class="subsection mt-5">
         <div class="grid-2-cols align-center">
           
-          <!-- Video Vertical Timeline -->
+          <!-- Video Vertical Timeline cambiado a YouTube iframe -->
           <div class="card-video">
             <div class="video-wrapper ratio-9-16">
-              <video controls preload="metadata">
-                <source src="videos/timeline-vert.mp4" type="video/mp4">
-              </video>
+              <iframe 
+                src="https://www.youtube-nocookie.com/embed/ljLUh-nS_7c" 
+                title="Timeline Vertical" 
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
             </div>
           </div>
 
