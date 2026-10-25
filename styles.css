@@ -1,0 +1,493 @@
+/* CONFIGURACIÓN AESTHETIC / MINIMAL CON FUENTES AMPLIADAS Y LEGIBLES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color: #0c0c0c;
+  --card-bg: #151515;
+  --card-hover: #1f1f1f;
+  --accent-cream: #ece6e2;
+  --accent-brown: #967d6d;
+  --text-main: #ffffff;
+  --text-secondary: #c2c2c2; /* Más claro para mejor lectura */
+  --border-radius: 22px;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.7; /* Mayor espacio entre líneas para lectura fácil */
+  font-size: 18px; /* Tamaño base aumentado */
+}
+
+/* NAVEGACIÓN */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 3rem;
+  background-color: rgba(12, 12, 12, 0.95);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--accent-cream);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2.2rem;
+}
+
+.nav-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--accent-cream);
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 3rem 1.8rem;
+}
+
+/* HERO / ENCABEZADO CON PERFIL Y SOMBRA */
+.hero {
+  padding: 4rem 1.8rem;
+  background-color: #0e0e0e;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 3.5rem;
+}
+
+.hero-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.hero-title-box h1 {
+  font-size: 4.8rem;
+  line-height: 0.95;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: var(--text-main);
+  font-family: serif;
+}
+
+.hero-profile-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.profile-img-container {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--accent-brown);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.9);
+  background: radial-gradient(circle, #2a2a2a 0%, #050505 85%);
+}
+
+.profile-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: contrast(115%);
+}
+
+.profile-name {
+  background-color: var(--text-main);
+  color: var(--bg-color);
+  padding: 0.5rem 1.6rem;
+  border-radius: var(--border-radius);
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+/* SECCIONES Y TÍTULOS GRANDES Y LEGIBLES */
+.section {
+  margin-bottom: 5.5rem;
+}
+
+.section-main-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-cream);
+  margin-bottom: 2.5rem;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.section-subtitle {
+  font-size: 1.3rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1.5px;
+}
+
+.desc-tag {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--accent-cream);
+  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+.section-description {
+  color: var(--text-secondary);
+  font-size: 1.15rem; /* Texto más grande */
+  line-height: 1.7;
+  margin-bottom: 1.8rem;
+}
+
+/* ESTRUCTURA TIPO PLANTILLA (INFO IZQ / VIDEOS DER) */
+.section-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.layout-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.layout-videos {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* GRILLAS DE VIDEOS PROYECTOS */
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.mt-5 {
+  margin-top: 2.5rem;
+}
+
+.right-promo-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card-video {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.card-video:hover {
+  transform: translateY(-4px);
+}
+
+/* FORMATOS Y MEDIDAS DE REPRODUCTORES */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  background-color: #000;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* Añade esto en tu styles.css */
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+.ratio-16-9 {
+  aspect-ratio: 16 / 9;
+}
+
+.ratio-9-16 {
+  aspect-ratio: 9 / 16;
+  width: 100%;
+  max-width: 260px;
+  /* height: 460px; -> Te sugiero quitar o comentar esta línea */
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+}
+
+.card-info {
+  padding: 1rem 1.2rem;
+}
+
+.card-info h4 {
+  font-size: 1.1rem; /* Texto de video más grande */
+  font-weight: 600;
+  color: var(--accent-cream);
+}
+
+/* BANNER DE PRECIOS */
+.promo-banner {
+  background-color: var(--card-bg);
+  border: 1.5px solid var(--accent-brown);
+  padding: 1.4rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.promo-banner:hover {
+  background-color: var(--card-hover);
+  transform: scale(1.02);
+}
+
+.promo-title {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+
+.promo-price {
+  font-size: 1.35rem; /* Destacado grande */
+  font-weight: 800;
+  color: var(--accent-cream) !important;
+  margin-top: 0.3rem;
+}
+
+.highlight-plus {
+  color: #ff7043;
+}
+
+/* BOTÓN NIVEL EDICIÓN */
+.badge-edition {
+  background-color: transparent;
+  border: 1.5px solid var(--accent-cream);
+  color: var(--accent-cream);
+  padding: 0.6rem 1.5rem;
+  border-radius: var(--border-radius);
+  font-size: 1rem; /* Más visible */
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.badge-edition:hover {
+  background-color: var(--accent-cream);
+  color: var(--bg-color);
+}
+
+/* SOBRE MÍ */
+.sobre-mi-box {
+  background-color: var(--card-bg);
+  padding: 3.5rem 2.5rem;
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.sobre-mi-content {
+  max-width: 850px;
+  margin: 0 auto 2.5rem auto;
+  text-align: center;
+}
+
+.sobre-mi-content p {
+  color: var(--text-secondary);
+  margin-bottom: 1.2rem;
+  font-size: 1.15rem; /* Lectura muy clara */
+}
+
+.font-weight-bold {
+  color: var(--accent-cream) !important;
+  font-weight: 700;
+  font-size: 1.25rem !important;
+  margin-top: 1.5rem;
+}
+
+.contact-links-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.9rem 1.8rem;
+  border-radius: var(--border-radius);
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.05rem;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+  background-color: var(--card-hover);
+  border-color: var(--accent-brown);
+}
+
+/* PRECIOS */
+.grid-precios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card-precio {
+  background-color: var(--card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2.2rem;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-precio h3 {
+  font-size: 1.25rem;
+  color: var(--accent-cream);
+  font-weight: 800;
+}
+
+.card-precio p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
+
+/* DESPEDIDA Y FOOTER */
+.thanks-section {
+  text-align: center;
+  margin: 4rem 0 2rem 0;
+}
+
+.thanks-section h2 {
+  font-size: 2.4rem;
+  letter-spacing: 3px;
+  color: var(--accent-cream);
+  font-family: serif;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ADAPTACIÓN MÓVIL OPTIMIZADA (RESPONSIVE) */
+@media (max-width: 900px) {
+  .section-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .layout-videos {
+    width: 100%;
+  }
+
+  .video-staggered-1, .video-staggered-2 {
+    transform: none; /* Alineación limpia en móviles */
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.2rem 1rem;
+  }
+
+  .nav-links {
+    gap: 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .hero-title-box h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .grid-2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .layout-videos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ratio-9-16 {
+    max-width: 100%;
+    height: 420px;
+  }
+}
