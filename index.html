@@ -42,11 +42,82 @@
   <main class="container">
 
 <!-- SECCIÓN: MIS PROYECTOS DESTACADOS -->
+    <section id="proyectos" class="section">
+      <h2 class="section-main-title">MIS PROYECTOS DESTACADOS</h2>
+      
+      <!-- SUBSECCIÓN 1: VIDEOS HORIZONTALES -->
+      <div class="subsection">
+        <h3 class="section-subtitle">VIDEOS HORIZONTALES</h3>
+        <div class="grid-2-cols">
+          
+          <!-- HOR-1 EN HORIZONTAL CON TU NUEVO ENLACE -->
+          <div class="card-video">
+            <div class="video-wrapper ratio-16-9">
+              <iframe 
+                src="https://www.youtube-nocookie.com/embed/9v8z5KBqxDg" 
+                title="Edit de basketball" 
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="card-info">
+              <h4>Edit de basketball</h4>
+            </div>
+          </div>
 
-<section id="proyectos" class="section">
-  <h2 class="section-main-title">MIS PROYECTOS DESTACADOS</h2>
-  
-v
+          <div class="card-video">
+            <div class="video-wrapper ratio-16-9">
+              <video controls preload="metadata">
+                <source src="videos/hor-2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="card-info">
+              <h4>Seguimos habitando de fonite?</h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SUBSECCIÓN 2: LÍNEA DE TIEMPO (1 Vertical Izq, 1 Horiz + Precio Der) -->
+      <div class="subsection mt-5">
+        <div class="grid-2-cols align-center">
+          
+          <!-- Video Vertical Timeline (Short) -->
+          <div class="card-video">
+            <div class="video-wrapper ratio-9-16">
+              <iframe 
+                src="https://www.youtube-nocookie.com/embed/ljLUh-nS_7c" 
+                title="Timeline Vertical" 
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Video Horizontal Minecraft + Promo -->
+          <div class="right-promo-group">
+            <div class="card-video">
+              <div class="video-wrapper ratio-16-9">
+                <video controls preload="metadata">
+                  <source src="videos/hor-minecraft.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+
+            <!-- ENLACE AUTOMÁTICO A PRECIOS -->
+            <div class="promo-banner btn-to-precios" data-target="#precios">
+              <p class="promo-title">video largo</p>
+              <p class="promo-price">1 minuto: 2 usd <span class="highlight-plus">+ intro</span></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    
 <!-- SECCIÓN: SHORTS -->
     <section id="shorts" class="section section-layout">
       <div class="layout-info">
@@ -83,7 +154,7 @@ v
         </div>
       </div>
     </section>
-
+    
 <!-- SECCIÓN: GAMING -->
     <section class="section section-layout">
       <div class="layout-info">
