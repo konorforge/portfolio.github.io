@@ -434,13 +434,13 @@ body {
   background-color: var(--card-hover);
 }
 
-.card-precio h3 {
+.card-precio h3, .card-pack h3 {
   font-size: 1.25rem;
   color: var(--accent-cream);
   font-weight: 800;
 }
 
-.card-precio p {
+.card-precio p, .card-pack p {
   color: var(--text-secondary);
   font-size: 1.05rem;
 }
